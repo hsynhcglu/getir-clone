@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
+
+.flag-select button {
+    @apply h-14 border-2 border-gray-200 hover:border-primary-color transition-all rounded
+}
+.flag-select button span > span:nth-child(2) {
+    @apply text-sm pl-2
+}
+.flag-select {
+    @apply !pb-0
+}
