@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "https://getir.com/_next/static/images/intro-market-basket-8ca56a5e5a21b80ccb71403d77df83d8.svg",
+        "title": "Market fiyatı neyse o",
+        "text": "GetirBüyük’te binlerce ürünü market fiyatına sipariş verirsiniz."
+    },
+    {
+        "id": 1,
+        "image": "https://getir.com/_next/static/images/intro-market-delivery-86c4407609c24bbdf92feb222d7baca0.svg",
+        "title": "Kapınıza teslim",
+        "text": "GetirBüyük’te siparişiniz kapınıza kadar gelir."
+    },
+    {
+        "id": 1,
+        "image": "https://getir.com/_next/static/images/intro-market-fee-586c3e4c701b44396ac99828259e9d7f.svg",
+        "title": "Teslimat ücreti yok",
+        "text": "GetirBüyük’te siparişleriniz için teslimat ücreti ödemezsiniz."
+    }
+]

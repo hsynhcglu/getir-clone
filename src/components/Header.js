@@ -1,8 +1,11 @@
 import React from 'react'
 import { HiOutlineGlobeAlt } from 'react-icons/hi'
-import { BsPersonPlusFill,BsPersonFill } from 'react-icons/bs'
+import { BsPersonPlusFill,BsPersonFill, BsMoon } from 'react-icons/bs'
+import { HiOutlineLightBulb } from 'react-icons/hi'
+import useDarkMode from 'useDarkMode'
 
 export default function Header() {
+    const [colorTheme, setTheme] = useDarkMode();
     return (
         <div className='w-full bg-primary-color'>
             <div className='container mx-auto h-11 flex justify-between'>
@@ -22,6 +25,14 @@ export default function Header() {
                         <BsPersonPlusFill size={20} />
                         Kayıt Ol
                     </a>
+                    <span onClick={() => setTheme(colorTheme)} className='flex items-center gap-x-2 hover:text-secondary-color transition-all'>
+                        {
+                            colorTheme == 'light' ? (
+                                <HiOutlineLightBulb size={20} />
+                            ):
+                            (  <BsMoon size={20}/>)
+                        }
+                    </span>
                 </nav>
             </div>
         </div>

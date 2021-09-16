@@ -28,7 +28,7 @@ export default function HeroSection() {
         arrows: false,
       };
     return (
-        <div className='relative before:bg-gradient-to-r before:from-primary-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10'>
+        <div className='relative before:bg-gradient-to-r before:from-primary-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-[500px] before:z-10'>
         <Slider {...settings}>
           <div>
             <img className='object-cover w-full h-[500px]' src='https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg'></img>
@@ -43,8 +43,8 @@ export default function HeroSection() {
             <h3 className='text-white text-3xl mt-4'>Dakikalar içinde <br /> kapınızda</h3>
           </div>
           <div>
-            <div className='bg-white w-[400px] rounded-md p-4'>
-                <h4 className='text-center text-primary-color text-lg font-semibold mb-4'>
+            <div className='bg-white w-[400px] rounded-md p-4 dark:bg-primary-color'>
+                <h4 className='text-center text-primary-color text-lg font-semibold mb-4 dark:text-secondary-color'>
                   Giriş yap veya kayıt ol
                 </h4>
                 <div className='grid gap-y-4'>
@@ -54,14 +54,14 @@ export default function HeroSection() {
                     customLabels={phones}
                     onSelect={code => setSelected(code)}
                     selected={selected}
-                    className='flag-select'
+                    className='flag-select dark:!text-secondary-color'
                   />
                   <label className='flex-1 relative'>
-                    <input required className='peer h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-color outline-none text-sm pt-2' />
-                    <span className='absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-500 transition-all peer-focus:h-7 peer-focus:text-primary-color peer-focus:text-xs peer-valid:h-7 peer-valid:text-primary-color peer-valid:text-xs '>Telefon Numarası</span>
+                    <input required className='dark:bg-primary-color dark:text-secondary-color peer h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-color outline-none text-sm pt-2' />
+                    <span className='dark:text-gray-200 dark:peer-focus:text-gray-200 dark:peer-valid:text-gray-200 absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-500 transition-all peer-focus:h-7 peer-focus:text-primary-color peer-focus:text-xs peer-valid:h-7 peer-valid:text-primary-color peer-valid:text-xs '>Telefon Numarası</span>
                   </label>
                 </div>
-                <button className='bg-secondary-color text-primary-color h-12 flex items-center justify-center rounded w-full text-sm font-semibold hover:bg-primary-color hover:text-secondary-color transition-all'>
+                <button className='bg-secondary-color dark:hover:bg-gray-200 dark:hover:text-primary-color text-primary-color h-12 flex items-center justify-center rounded w-full text-sm font-semibold hover:bg-primary-color hover:text-secondary-color transition-all'>
                   Telefon numarası ile devam et
                 </button>
                 <hr className='h-[1px] bg-gray-300 my-2' />

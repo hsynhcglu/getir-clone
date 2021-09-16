@@ -14,3 +14,12 @@
 .flag-select {
     @apply !pb-0
 }
+.ReactFlagsSelect-module_label__27pw9 {
+    @apply dark:text-secondary-color
+}
+.ReactFlagsSelect-module_selectBtn__19wW7:after {
+    @apply dark:!border-t-secondary-color
+}
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
+    @apply dark:bg-primary-color
+}

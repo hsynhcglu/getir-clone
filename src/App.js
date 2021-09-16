@@ -13,12 +13,14 @@ function App() {
     <div>
       <Header />
       <HeroSection />
-      <Categories />
-      <Campaignes />
-      <Favorites />
-      <MobileApp />
-      <Cards />
-      <Footer />
+      <div className='dark:bg-primary-color'>
+        <Categories />
+        <Campaignes />
+        <Favorites />
+        <MobileApp />
+        <Cards />
+        <Footer />
+      </div>
     </div>
   );
 }
